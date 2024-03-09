@@ -1,0 +1,34 @@
+To make words appear to go down as the screen size decreases, you can use CSS to adjust the font size or the layout. Here's an example of how you can achieve this using CSS media queries:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Text</title>
+<style>
+  body {
+    font-size: 16px; /* Base font size */
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 12px; /* Further decrease font size for even smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+  <p>This is some text that will appear to go down as the screen size decreases.</p>
+</body>
+</html>
+
+
+In this example, as the screen size decreases below 768px, the font size decreases, and as it decreases further below 480px, the font size decreases even more. This gives the illusion that the words are "going down" as the screen size decreases.
